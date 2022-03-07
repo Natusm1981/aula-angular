@@ -1,0 +1,6 @@
+<div class="aula">
+  <p *ngIf="show">exibindo MENSAGEM</p>
+  <button (click)="showMessage()">CLIQUE</button>
+  <br>
+  <span (mouseenter)="trocar()" [ngClass]="fundo">Texto</span>
+</div>

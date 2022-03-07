@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Componente2Component implements OnInit {
 
-  carro = {
+  carro = { // Simula a pegar dados do banco de DADOS
     nome: 'Gol',
     cor: 'Prata',
     ano: '2015',

@@ -1,0 +1,18 @@
+<div class="aula">
+  <h2>ANIMALLLLES</h2>
+  <ul>
+    <div class="imagem" *ngFor="let animal of animals">
+      <li >
+        <img src="{{animal.link}}" alt="{{animal.alt}}">
+        <br> Nome: {{animal.name}}
+        <br> Tipo: {{animal.type}}
+        <br>
+        <span *ngIf="animal.mostrar">{{animal.age}}</span>
+        <br *ngIf="animal.mostrar">
+        <button (click)="showAge(animal)">SHOW AGE</button>
+        <br>
+        <button (click)="removeAnimal(animal)">REMOVER</button>
+      </li>
+    </div>
+  </ul>
+</div>

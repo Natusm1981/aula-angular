@@ -1,0 +1,17 @@
+img{
+  max-width: 20%;
+  align-content: center;
+  padding: 1%;
+}
+
+.imagem{
+  border: 1px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  width: 30%;
+  height: 50%;
+
+}

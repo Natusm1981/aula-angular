@@ -1,0 +1,25 @@
+<div class="aula">
+  <h2>Two way data Binding</h2>
+  <form>
+    <input type="text" [(ngModel)] = "name"
+    name="name"
+    placeholder="Digite seu nome">
+    <input type="submit" value="Enviar">
+
+  </form>
+
+  <div *ngIf=" name !== '' ">
+    <p>O nome é {{ name }}</p>
+  </div>
+
+  <div>
+    <form>
+      <input type="number" name="a"  [(ngModel)] = "numA">
+      <input type="number" name="b"  [(ngModel)] = "numB">
+    </form>
+      <p>O Valor da soma é {{ numA + numB }}</p>
+
+  </div>
+
+
+</div>
